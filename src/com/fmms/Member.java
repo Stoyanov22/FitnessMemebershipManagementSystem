@@ -6,7 +6,7 @@ public class Member {
     private char memberType;
     private double fees;
 
-    public Member(int memberID, String name, char memberType, double fees){
+    public Member(int memberID, String name, char memberType, double fees) {
         this.memberID = memberID;
         this.name = name;
         this.memberType = memberType;
@@ -46,8 +46,8 @@ public class Member {
     }
 
     @Override
-    public String toString(){
-        return memberID + "," + name + "," +  memberType + "," + fees;
+    public String toString() {
+        return memberID + "," + name + "," + memberType + "," + fees;
     }
 
     @Override

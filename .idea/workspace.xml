@@ -13,6 +13,8 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -22,8 +24,31 @@
   <component name="ProjectId" id="1Q6doHemYfLfmOxsCtiyZ87KhXg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/test/com/fmms" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.fmms" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Stoyanov22\Documents\Programming\Java\FitnessMemebershipManagementSystem\test" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -37,7 +62,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.MemberTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.fmms.Main" />
       <module name="FitnessMemebershipManagementSystem" />
@@ -48,6 +73,80 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MemberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FitnessMemebershipManagementSystem" />
+      <shortenClasspath name="MANIFEST" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fmms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="com.fmms" />
+      <option name="MAIN_CLASS_NAME" value="com.fmms.MemberTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemberTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FitnessMemebershipManagementSystem" />
+      <shortenClasspath name="MANIFEST" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fmms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="com.fmms" />
+      <option name="MAIN_CLASS_NAME" value="com.fmms.MemberTest" />
+      <option name="METHOD_NAME" value="testToString" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <shortenClasspath name="MANIFEST" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="com.fmms" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="PARAMETERS" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.MemberTest.testToString" />
+      <item itemvalue="JUnit.MemberTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MemberTest" />
+        <item itemvalue="JUnit.MemberTest.testToString" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />

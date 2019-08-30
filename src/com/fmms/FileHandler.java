@@ -55,13 +55,13 @@ public class FileHandler {
             }
         }
 
-        try{
+        try {
             File oldMembersFile = new File("members.csv");
             File newMembersFile = new File("temp.csv");
-            if(oldMembersFile.delete()){
+            if (oldMembersFile.delete()) {
                 newMembersFile.renameTo(oldMembersFile);
             }
-        } catch (Exception e){
+        } catch (Exception e) {
             System.out.println("The file failed to update. Please try again or contact support");
         }
     }
