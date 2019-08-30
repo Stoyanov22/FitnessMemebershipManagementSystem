@@ -9,7 +9,7 @@ public class MemberTest {
     Member member = new Member(22, "Iliyan", 'M', 1000);
 
     @Test
-    public void testMember(){
+    public void testMember() {
         assertNotNull(member.getMemberID());
         assertNotNull(member.getName());
         assertNotNull(member.getMemberType());

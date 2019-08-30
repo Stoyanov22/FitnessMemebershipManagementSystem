@@ -4,7 +4,7 @@ public class SingleClubMember extends Member {
 
     private int clubID;
 
-    public SingleClubMember(int memberID, String name,  double fees, int clubID) {
+    public SingleClubMember(int memberID, String name, double fees, int clubID) {
         super(memberID, name, 'S', fees);
         this.clubID = clubID;
     }

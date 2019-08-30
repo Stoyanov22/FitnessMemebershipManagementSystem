@@ -5,6 +5,7 @@ import java.util.LinkedList;
 
 public class FileHandler {
 
+    //Reads a file and returns a LinkedList of Members
     public LinkedList<Member> readFile() {
         LinkedList<Member> members = new LinkedList<>();
         String lineRead;
@@ -37,6 +38,7 @@ public class FileHandler {
         return members;
     }
 
+    //Adds a line to a file
     public void appendFile(String member) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("members.csv", true))) {
             writer.write(member + "\n");

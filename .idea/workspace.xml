@@ -62,17 +62,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MultiClubMemberTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.fmms.Main" />
-      <module name="FitnessMemebershipManagementSystem" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Whole project">
     <configuration name="MemberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FitnessMemebershipManagementSystem" />
       <shortenClasspath name="MANIFEST" />
@@ -165,6 +155,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Whole project" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <shortenClasspath name="MANIFEST" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="PARAMETERS" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <shortenClasspath name="MANIFEST" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -182,19 +188,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.MemberTest.testToString" />
       <item itemvalue="JUnit.MemberTest" />
       <item itemvalue="JUnit.SingleClubMemberTest" />
       <item itemvalue="JUnit.MultiClubMemberTest" />
+      <item itemvalue="JUnit.Whole project" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Whole project" />
         <item itemvalue="JUnit.MultiClubMemberTest" />
         <item itemvalue="JUnit.MemberTest" />
         <item itemvalue="JUnit.SingleClubMemberTest" />
         <item itemvalue="JUnit.MemberTest.testToString" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
