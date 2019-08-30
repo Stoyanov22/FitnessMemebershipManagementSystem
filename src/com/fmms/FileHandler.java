@@ -17,10 +17,10 @@ public class FileHandler {
                 //22,Iliyan,M,2000,100
                 splitLine = lineRead.split(",");
                 if (splitLine[2].equals("S")) {
-                    member = new SingleClubMember(Integer.parseInt(splitLine[0]), splitLine[1], splitLine[2].charAt(0),
+                    member = new SingleClubMember(Integer.parseInt(splitLine[0]), splitLine[1],
                             Double.parseDouble(splitLine[3]), Integer.parseInt(splitLine[4]));
                 } else {
-                    member = new MultiClubMember(Integer.parseInt(splitLine[0]), splitLine[1], splitLine[2].charAt(0),
+                    member = new MultiClubMember(Integer.parseInt(splitLine[0]), splitLine[1],
                             Double.parseDouble(splitLine[3]), Integer.parseInt(splitLine[4]));
                 }
 

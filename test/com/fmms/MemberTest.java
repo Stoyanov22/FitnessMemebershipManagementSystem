@@ -9,6 +9,14 @@ public class MemberTest {
     Member member = new Member(22, "Iliyan", 'M', 1000);
 
     @Test
+    public void testMember(){
+        assertNotNull(member.getMemberID());
+        assertNotNull(member.getName());
+        assertNotNull(member.getMemberType());
+        assertNotNull(member.getFees());
+    }
+
+    @Test
     public void testToString() {
         assertEquals("22,Iliyan,M,1000.0", member.toString());
     }
