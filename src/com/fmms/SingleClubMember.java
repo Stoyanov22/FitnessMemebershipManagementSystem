@@ -19,19 +19,7 @@ public class SingleClubMember extends Member {
 
     @Override
     public String toString() {
-        String clubName = null;
-        switch (clubID) {
-            case 1:
-                clubName = "Mercury";
-                break;
-            case 2:
-                clubName = "Neptune";
-                break;
-            case 3:
-                clubName = "Jupiter";
-                break;
-        }
-        return super.toString() + " goes to Club " + clubName;
+        return super.toString() + "," + clubID;
     }
 
     @Override

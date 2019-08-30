@@ -47,8 +47,7 @@ public class Member {
 
     @Override
     public String toString(){
-        String membership = (memberType=='S') ? "Single " : "Multi ";
-        return memberID + ": " + name + " with " +  membership + " Club membership has fees " + fees;
+        return memberID + "," + name + "," +  memberType + "," + fees;
     }
 
     @Override
