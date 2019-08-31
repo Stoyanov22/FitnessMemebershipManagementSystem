@@ -5,6 +5,15 @@ import java.util.LinkedList;
 
 public class FileHandler {
 
+    //Adds a member to the CSV list of members
+    public void appendFile(String member) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("members.csv", true))) {
+            writer.write(member + "\n");
+        } catch (IOException e) {
+            System.out.println("Writing in the file failed for some reason. Please try again or contact support");
+        }
+    }
+
     //Reads a file and returns a LinkedList of Members
     public LinkedList<Member> readFile() {
         LinkedList<Member> members = new LinkedList<>();
@@ -13,8 +22,8 @@ public class FileHandler {
         Member member;
 
         try (BufferedReader reader = new BufferedReader(new FileReader("members.csv"))) {
-            lineRead = reader.readLine();
-            while (lineRead != null) {
+
+            while ((lineRead = reader.readLine()) != null) {
                 //22,Iliyan,M,2000,100
                 splitLine = lineRead.split(",");
                 if (splitLine[2].equals("S")) {
@@ -38,15 +47,6 @@ public class FileHandler {
         return members;
     }
 
-    //Adds a line to a file
-    public void appendFile(String member) {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("members.csv", true))) {
-            writer.write(member + "\n");
-        } catch (IOException e) {
-            System.out.println("Writing in the file failed for some reason. Please try again or contact support");
-        }
-    }
-
     //It is called when we want to remove a member from a club
     public void overwriteFile(LinkedList<Member> members) {
         for (Member member : members) {
@@ -60,9 +60,8 @@ public class FileHandler {
         try {
             File oldMembersFile = new File("members.csv");
             File newMembersFile = new File("temp.csv");
-            if (oldMembersFile.delete()) {
-                newMembersFile.renameTo(oldMembersFile);
-            }
+            newMembersFile.renameTo(oldMembersFile);
+            newMembersFile.delete();
         } catch (Exception e) {
             System.out.println("The file failed to update. Please try again or contact support");
         }
