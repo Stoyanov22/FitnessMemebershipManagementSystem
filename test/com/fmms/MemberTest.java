@@ -6,7 +6,7 @@ import static junit.framework.TestCase.*;
 
 public class MemberTest {
 
-    Member member = new Member(22, "Iliyan", 'M', 1000);
+    Member member = new Member(22, "Iliyan");
 
     @Test
     public void testMember() {
@@ -18,19 +18,21 @@ public class MemberTest {
 
     @Test
     public void testToString() {
-        assertEquals("22,Iliyan,M,1000.0", member.toString());
+        Member testMember = member;
+        testMember.setMemberType('S');
+        testMember.setFees(100);
+        assertEquals("22,Iliyan,S,100.0", member.toString());
     }
 
     @Test
     public void testEquals() {
-        assertEquals(new Member(22, "Iliyan", 'M', 1000), member);
-        assertTrue(member.equals(new Member(22, "Iliyan", 'M', 1000)));
-        assertNotSame(new Member(22, "Iliyan", 'S', 1000), member);
+        assertTrue(member.equals(new Member(22, "Iliyan")));
+        assertFalse(member.equals(new Member(22, "Atanas")));
     }
 
     @Test
     public void testHashCode() {
         assertEquals(22, member.hashCode());
-        assertNotSame(member.hashCode(), new Member(1, "Iliyan", 'M', 1000).hashCode());
+        assertNotSame(member.hashCode(), new Member(1, "Iliyan").hashCode());
     }
 }

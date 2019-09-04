@@ -66,20 +66,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fmms.Main" />
-      <module name="FitnessMemebershipManagementSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fmms.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Whole project">
     <configuration name="FileHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FitnessMemebershipManagementSystem" />
       <shortenClasspath name="MANIFEST" />
@@ -172,6 +159,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Whole project" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <shortenClasspath name="MANIFEST" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fmms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="com.fmms" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="PARAMETERS" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <shortenClasspath name="MANIFEST" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -189,19 +198,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.FileHandlerTest" />
+      <item itemvalue="JUnit.FileHandlerTest.testOverwriteFile" />
       <item itemvalue="JUnit.FileHandlerTest.testAppendFile" />
       <item itemvalue="JUnit.FileHandlerTest.testReadFile" />
-      <item itemvalue="JUnit.FileHandlerTest.testOverwriteFile" />
-      <item itemvalue="JUnit.FileHandlerTest" />
-      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.Whole project" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.FileHandlerTest" />
-        <item itemvalue="JUnit.FileHandlerTest.testReadFile" />
+        <item itemvalue="JUnit.Whole project" />
         <item itemvalue="JUnit.FileHandlerTest.testOverwriteFile" />
         <item itemvalue="JUnit.FileHandlerTest.testAppendFile" />
+        <item itemvalue="JUnit.FileHandlerTest.testReadFile" />
+        <item itemvalue="JUnit.FileHandlerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -223,10 +232,23 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/fmms/FileHandler.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

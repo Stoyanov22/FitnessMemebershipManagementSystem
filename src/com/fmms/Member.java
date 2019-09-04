@@ -6,11 +6,9 @@ public class Member {
     private char memberType;
     private double fees;
 
-    public Member(int memberID, String name, char memberType, double fees) {
+    public Member(int memberID, String name) {
         this.memberID = memberID;
         this.name = name;
-        this.memberType = memberType;
-        this.fees = fees;
     }
 
     public int getMemberID() {

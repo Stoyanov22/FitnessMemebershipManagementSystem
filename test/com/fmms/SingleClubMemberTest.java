@@ -7,7 +7,7 @@ import static org.junit.Assert.assertNotNull;
 
 public class SingleClubMemberTest {
 
-    SingleClubMember member = new SingleClubMember(22, "Iliyan", 1000, 2);
+    SingleClubMember member = new SingleClubMember(22, "Iliyan", 2);
 
     @Test
     public void testSingleClubMember() {
@@ -18,17 +18,17 @@ public class SingleClubMemberTest {
         assertNotNull(member.getClubID());
         assertEquals('S', member.getMemberType());
         assertTrue(member.getClubID() > 0 && member.getClubID() < 4);
+        //TODO: Write cases for different clubIDs
     }
 
     @Test
     public void testToString() {
-        assertEquals("22,Iliyan,S,1000.0,2", member.toString());
+        assertEquals("22,Iliyan,S,950.0,2", member.toString());
     }
 
     @Test
     public void testEquals() {
-        assertEquals(new SingleClubMember(22, "Iliyan", 1000, 2), member);
-        assertTrue(member.equals(new SingleClubMember(22, "Iliyan", 1000, 2)));
-        assertNotSame(new SingleClubMember(22, "Iliyan", 1000, 2), member);
+        assertTrue(member.equals(new SingleClubMember(22, "Iliyan", 2)));
+        assertFalse(member.equals(new SingleClubMember(22, "Iliyan", 3)));
     }
 }
