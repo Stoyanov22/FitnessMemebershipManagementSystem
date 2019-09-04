@@ -6,7 +6,7 @@ import java.util.LinkedList;
 public class FileHandler {
 
     //Adds a member to the CSV list of members
-    public void appendMember(String member) {
+    public void appendMember(Member member) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("members.csv", true))) {
             writer.write(member + "\n");
         } catch (IOException e) {

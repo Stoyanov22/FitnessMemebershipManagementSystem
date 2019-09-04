@@ -18,7 +18,7 @@ public class FileHandlerTest {
 
     @Test
     public void testAppendFile() {
-        fh.appendMember(member.toString());
+        fh.appendMember(member);
         File f = new File("members.csv");
         assertTrue(f.exists());
         String lineRead;
