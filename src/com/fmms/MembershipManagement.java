@@ -48,12 +48,24 @@ public class MembershipManagement {
 
     protected void displayInfo() {
         int userInput = getPrintOptions();
-        if(userInput == 1) printMemberInfo();
-        else printAllMembers();
+        LinkedList<Member> members = fileHandler.readMembers();
+        if (userInput == 1) printMemberInfo(members);
+        else printAllMembers(members);
     }
 
     protected void removeMember() {
-
+        LinkedList<Member> members = fileHandler.readMembers();
+        int id = getMemberToRemove(members);
+        if (id != 0) {
+            LinkedList<Member> newMembersList = new LinkedList<>();
+            for (Member member : members) {
+                if (member.getMemberID() == id) {
+                    continue;
+                }
+                newMembersList.add(member);
+            }
+            fileHandler.overwriteMembers(newMembersList);
+        }
     }
 
     //Tries to read the INT value entered. If the user fails to enter an INT, the method keeps prompting the user enter new value;
@@ -99,7 +111,7 @@ public class MembershipManagement {
         return getIntInput(4);
     }
 
-    private int getPrintOptions(){
+    private int getPrintOptions() {
         System.out.println("AVAILABLE Options");
         System.out.println("================");
         System.out.println("1) Print single member");
@@ -108,18 +120,28 @@ public class MembershipManagement {
         return getIntInput(2);
     }
 
-    public void printMemberInfo() {
+    private int getMemberToRemove(LinkedList<Member> members) {
+        printAllMembers(members);
+        System.out.println("Enter the ID of the member you want to remove: ");
+        int id = reader.nextInt();
+        Optional<Member> member = members.stream().filter(m -> m.getMemberID() == id).findFirst();
+        if (member.isPresent()) return member.get().getMemberID();
+        else {
+            System.out.println("No user with id " + id + "found");
+            return 0;
+        }
+    }
+
+    public void printMemberInfo(LinkedList<Member> members) {
         System.out.println("User ID: ");
         int id = reader.nextInt();
-        LinkedList<Member> members = fileHandler.readMembers();
-        Optional<Member> member = members.stream().filter(m->m.getMemberID() == id).findFirst();
-        if(member.isPresent()) System.out.println(member.get());
+        Optional<Member> member = members.stream().filter(m -> m.getMemberID() == id).findFirst();
+        if (member.isPresent()) System.out.println(member.get());
         else System.out.println("No user with id " + id);
     }
 
-    public void printAllMembers() {
-        LinkedList<Member> members = fileHandler.readMembers();
-        for(Member member : members){
+    public void printAllMembers(LinkedList<Member> members) {
+        for (Member member : members) {
             System.out.println(member);
         }
     }
