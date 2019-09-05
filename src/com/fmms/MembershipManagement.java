@@ -1,5 +1,6 @@
 package com.fmms;
 
+import java.io.IOException;
 import java.util.LinkedList;
 import java.util.Optional;
 import java.util.Scanner;
@@ -32,8 +33,11 @@ public class MembershipManagement {
                 break;
         }
         System.out.println("Press any key to continue...");
-        //TODO: if enter is clicked it should continue too.
-        reader.next();
+        try {
+            System.in.read();
+        } catch (IOException e) {
+            System.out.println("Well this was not any key... :)");
+        }
         initMenu();
     }
 
