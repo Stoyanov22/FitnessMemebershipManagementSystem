@@ -18,7 +18,11 @@ public class SingleClubMemberTest {
         assertNotNull(member.getClubID());
         assertEquals('S', member.getMemberType());
         assertTrue(member.getClubID() > 0 && member.getClubID() < 4);
-        //TODO: Write cases for different clubIDs
+        assertEquals(950.0, member.getFees());
+        SingleClubMember testMember = new SingleClubMember(1, "Pepi", 1);
+        assertEquals(900.0, testMember.getFees());
+        testMember = new SingleClubMember(2, "Toti", 3);
+        assertEquals(1000.0, testMember.getFees());
     }
 
     @Test
